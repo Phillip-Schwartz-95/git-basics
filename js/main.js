@@ -7,10 +7,15 @@ function onBallClick() {
     
         currentWidth += 50
         currentHeight += 50
+
+        if (currentWidth > 400 || currentHeight > 400) {
+            currentWidth = 100
+            currentHeight = 100
     
         ball.style.width = `${currentWidth}px`
         ball.style.height = `${currentHeight}px`
     
         ball.innerText = currentWidth 
     }
-    
+}
+
