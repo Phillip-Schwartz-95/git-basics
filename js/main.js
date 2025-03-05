@@ -1,6 +1,6 @@
 'use strict'
 
-function onBallClick() {
+function onBallClick(maxDiameter) {
         const ball = document.querySelector('.ball')
         let currentWidth = parseInt(ball.style.width) || 100
         let currentHeight =  parseInt(ball.style.height) || 100
@@ -10,7 +10,7 @@ function onBallClick() {
         currentWidth += newDiam
         currentHeight += newDiam
 
-        if (currentWidth > 400 || currentHeight > 400) {
+        if (currentWidth > maxDiameter || currentHeight > maxDiameter) {
             currentWidth = 100
             currentHeight = 100
         }
