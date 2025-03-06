@@ -1,7 +1,7 @@
 'use strict'
 
-function onBallClick(maxDiameter) {
-        const ball = document.querySelector('.ball')
+function onBallClick(maxDiameter, ballClass) {
+        const ball = document.querySelector(`.${ballClass}`)
         let currentWidth = parseInt(ball.style.width) || 100
         let currentHeight =  parseInt(ball.style.height) || 100
 
